@@ -44,7 +44,6 @@ public class FileReaderByType {
                     continue;
                 } catch (IllegalArgumentException e) {
                 }
-                ;
 
                 try {
                     Double value = Double.parseDouble(line);
@@ -60,7 +59,6 @@ public class FileReaderByType {
                     continue;
                 } catch (IllegalArgumentException e) {
                 }
-                ;
 
                 stringWriter = writeValue("strings.txt", stringWriter, line);
 
@@ -70,7 +68,6 @@ public class FileReaderByType {
                     }
                     stringStatisticsHandler.fillStatistics(line.length());
                 }
-                ;
             }
             scanner.close();
         }
@@ -80,7 +77,6 @@ public class FileReaderByType {
             printStatistics(floatStatisticsHandler, statistics > 1, "Floats:", true);
             printStatistics(stringStatisticsHandler, statistics > 1, "Strings:", false);
         }
-        ;
 
         closeWriter(integerWriter);
         closeWriter(floatWriter);
@@ -91,8 +87,6 @@ public class FileReaderByType {
             throws IOException, IllegalArgumentException {
         return new FileWriter(path + typeName, addToExistingFiles);
     }
-
-    ;
 
     private FileWriter writeValue(String fileName, FileWriter fileWriter, String line) throws IOException {
         if (fileWriter == null) {
