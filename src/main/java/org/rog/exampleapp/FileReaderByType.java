@@ -1,3 +1,5 @@
+package org.rog.exampleapp;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

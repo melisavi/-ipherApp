@@ -1,3 +1,5 @@
+package org.rog.exampleapp;
+
 public class StatisticsHandler {
     private boolean fullStatistics = false;
     private int quantity = 0;

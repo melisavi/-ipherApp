@@ -1,3 +1,5 @@
+package org.rog.exampleapp;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
