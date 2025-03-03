@@ -4,7 +4,7 @@ import java.util.List;
 
 public class MainClass {
     public static void main(String[] args) throws IOException, IllegalArgumentException {
-        args = "-f -a -o /some/path -p sample- in1.txt in2.txt".split(" ");
+        //args = "-f -a -o /some/path -p sample- in1.txt in2.txt".split(" ");
         List<String> inputFiles = new ArrayList<>();
         String outPath = new java.io.File(".").getCanonicalPath();
         String outPrefix = "";
@@ -28,7 +28,6 @@ public class MainClass {
                 }
             }
         }
-        ;
 
         new FileReaderByType(outPath + "/" + outPrefix, addToExistingFiles, statistics).readFiles(inputFiles);
     }
